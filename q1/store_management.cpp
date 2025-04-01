@@ -32,7 +32,7 @@ void initializeDatabase() {
     }
 }
 
-// Function to add a product
+//  add a product
 void addProduct(const string& name, double price, int stock) {
     try {
         SQLite::Database db("store.db", SQLite::OPEN_READWRITE);
@@ -47,7 +47,7 @@ void addProduct(const string& name, double price, int stock) {
     }
 }
 
-// Function to update product details
+//  update product details
 void updateProduct(int id, double price, int stock) {
     try {
         SQLite::Database db("store.db", SQLite::OPEN_READWRITE);
@@ -62,7 +62,7 @@ void updateProduct(int id, double price, int stock) {
     }
 }
 
-// Function to purchase a product
+//  purchase a product
 void purchaseProduct(int id, int quantity) {
     try {
         SQLite::Database db("store.db", SQLite::OPEN_READWRITE);
@@ -87,7 +87,7 @@ void purchaseProduct(int id, int quantity) {
     }
 }
 
-// Function to display all products
+//  display all products
 void displayProducts() {
     try {
         SQLite::Database db("store.db", SQLite::OPEN_READONLY);
